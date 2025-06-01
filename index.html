@@ -11,28 +11,49 @@
 </head>
 <body>
   <div class="container">
-    <header>
-      <img src="profile.jpg" alt="Maurizio Morri" class="profile-img">
-      <h1>Maurizio Morri</h1>
-      <p class="subtitle">Software Engineer | Cloud Enthusiast | Open Source Advocate</p>
-      <a class="cv-button" href="Maurizio_Morri_CV.pdf" target="_blank" download>Download CV</a>
-      <nav>
-        <a href="https://github.com/mmorri" target="_blank">GitHub</a>
-        <a href="mailto:your.email@example.com">Email</a>
-        <a href="#projects">Projects</a>
-        <a href="#about">About</a>
-      </nav>
+    <button id="darkModeToggle" aria-label="Toggle dark mode">🌙</button>
+    <header class="hero">
+      <div class="profile-card">
+        <img src="profile.jpg" alt="Maurizio Morri" class="profile-img">
+        <h1>Maurizio Morri</h1>
+        <p class="subtitle">Software Engineer | Cloud Enthusiast | Open Source Advocate</p>
+        <a class="cv-button" href="Maurizio_Morri_CV.pdf" target="_blank" download>Download CV</a>
+        <div class="social-icons">
+          <a href="https://github.com/mmorri" target="_blank" aria-label="GitHub"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" alt="GitHub"></a>
+          <a href="mailto:your.email@example.com" aria-label="Email"><img src="https://img.icons8.com/ios-filled/50/000000/new-post.png" alt="Email"></a>
+        </div>
+        <nav>
+          <a href="#projects">Projects</a>
+          <a href="#skills">Skills</a>
+          <a href="#about">About</a>
+        </nav>
+      </div>
     </header>
     <main>
-      <section id="about">
+      <section id="about" class="section-card">
         <h2>About Me</h2>
         <p>
           Hi! I'm Maurizio Morri, a passionate software engineer with a love for building scalable cloud solutions and contributing to open source. I enjoy working with Python, automation, and modern web technologies. My goal is to create impactful software and share knowledge with the community.
         </p>
       </section>
-      <section id="projects">
+      <section id="skills" class="section-card">
+        <h2>Skills</h2>
+        <div class="skills-grid">
+          <div class="skill"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="Python"><span>Python</span></div>
+          <div class="skill"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg" alt="Docker"><span>Docker</span></div>
+          <div class="skill"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linux/linux-original.svg" alt="Linux"><span>Linux</span></div>
+          <div class="skill"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/selenium/selenium-original.svg" alt="Selenium"><span>Selenium</span></div>
+          <div class="skill"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/pytorch/pytorch-original.svg" alt="PyTorch"><span>PyTorch</span></div>
+          <div class="skill"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="JavaScript"><span>JavaScript</span></div>
+          <div class="skill"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" alt="Node.js"><span>Node.js</span></div>
+          <div class="skill"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/googlecloud/googlecloud-original.svg" alt="GCP"><span>GCP</span></div>
+          <div class="skill"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/azure/azure-original.svg" alt="Azure"><span>Azure</span></div>
+          <div class="skill"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/oracle/oracle-original.svg" alt="Oracle"><span>Oracle</span></div>
+        </div>
+      </section>
+      <section id="projects" class="section-card">
         <h2>Featured Projects</h2>
-        <ul class="project-list">
+        <ul class="project-list project-grid">
           <li>
             <a href="https://github.com/mmorri/portfolio/blob/master/projects/comp_bio/Basic_alignment_NF_SM" target="_blank">
               <strong>Genomic Alignment Pipeline</strong><br>
@@ -75,5 +96,6 @@
       <p>&copy; 2025 Maurizio Morri &mdash; Powered by GitHub Pages</p>
     </footer>
   </div>
+  <script src="script.js"></script>
 </body>
 </html>
