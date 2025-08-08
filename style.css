@@ -35,7 +35,7 @@ body {
   position: relative;
 }
 
-/* INSANE ANIMATED BACKGROUND */
+/* LIGHT ANIMATED BACKGROUND */
 body::before {
   content: '';
   position: fixed;
@@ -44,57 +44,20 @@ body::before {
   width: 100%;
   height: 100%;
   background: 
-    radial-gradient(circle at 20% 80%, rgba(120, 119, 198, 0.4) 0%, transparent 50%),
-    radial-gradient(circle at 80% 20%, rgba(255, 119, 198, 0.4) 0%, transparent 50%),
-    radial-gradient(circle at 40% 40%, rgba(120, 219, 255, 0.4) 0%, transparent 50%),
-    radial-gradient(circle at 60% 60%, rgba(255, 219, 120, 0.3) 0%, transparent 50%);
+    radial-gradient(circle at 20% 80%, rgba(120, 119, 198, 0.2) 0%, transparent 50%),
+    radial-gradient(circle at 80% 20%, rgba(255, 119, 198, 0.2) 0%, transparent 50%),
+    radial-gradient(circle at 40% 40%, rgba(120, 219, 255, 0.2) 0%, transparent 50%);
   z-index: -2;
-  animation: backgroundShift 30s ease-in-out infinite;
-}
-
-/* FLOATING PARTICLES */
-body::after {
-  content: '';
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-image: 
-    radial-gradient(2px 2px at 20px 30px, #667eea, transparent),
-    radial-gradient(2px 2px at 40px 70px, #764ba2, transparent),
-    radial-gradient(1px 1px at 90px 40px, #f093fb, transparent),
-    radial-gradient(1px 1px at 130px 80px, #4facfe, transparent),
-    radial-gradient(2px 2px at 160px 30px, #00f2fe, transparent);
-  background-repeat: repeat;
-  background-size: 200px 100px;
-  z-index: -1;
-  animation: particleFloat 20s linear infinite;
-  opacity: 0.6;
+  animation: backgroundShift 40s ease-in-out infinite;
 }
 
 @keyframes backgroundShift {
   0%, 100% { 
-    transform: translate(0, 0) rotate(0deg) scale(1);
-    filter: hue-rotate(0deg);
-  }
-  25% { 
-    transform: translate(-20px, -20px) rotate(2deg) scale(1.05);
-    filter: hue-rotate(90deg);
+    transform: translate(0, 0) rotate(0deg);
   }
   50% { 
-    transform: translate(20px, -10px) rotate(-1deg) scale(0.95);
-    filter: hue-rotate(180deg);
+    transform: translate(-10px, -10px) rotate(1deg);
   }
-  75% { 
-    transform: translate(-10px, 20px) rotate(1deg) scale(1.02);
-    filter: hue-rotate(270deg);
-  }
-}
-
-@keyframes particleFloat {
-  0% { transform: translateY(0px) rotate(0deg); }
-  100% { transform: translateY(-100px) rotate(360deg); }
 }
 
 .container {
