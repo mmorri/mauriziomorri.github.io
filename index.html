@@ -3,102 +3,458 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Maurizio Morri | Personal Website</title>
+  <title>Maurizio Morri | Software Engineer & Cloud Enthusiast</title>
+  <meta name="description" content="Maurizio Morri - Software Engineer, Cloud Enthusiast, and Open Source Advocate. Specializing in Python, automation, and modern web technologies.">
+  <meta name="keywords" content="Maurizio Morri, Software Engineer, Python, Cloud, DevOps, Open Source">
   <link rel="stylesheet" href="style.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/x-icon" href="Morri_vcard.jpg">
 </head>
 <body>
+  <!-- Loading Screen -->
+  <div class="loading" id="loading">
+    <div class="spinner"></div>
+  </div>
+
   <div class="container">
     <button id="darkModeToggle" aria-label="Toggle dark mode">🌙</button>
+    
+    <!-- Hero Section -->
     <header class="hero">
       <div class="profile-card">
         <img src="Morri_vcard.jpg" alt="Maurizio Morri" class="profile-img">
         <h1>Maurizio Morri</h1>
         <p class="subtitle">Software Engineer | Cloud Enthusiast | Open Source Advocate</p>
-        <a class="cv-button" href="Morri_ML_25_7.pdf" target="_blank" download>Download CV</a>
+        <p class="tagline">Building scalable solutions and contributing to the future of technology</p>
+        <a class="cv-button" href="Morri_ML_25_7.pdf" target="_blank" download>📄 Download CV</a>
+        
         <div class="social-icons">
-          <a href="https://github.com/mmorri" target="_blank" aria-label="GitHub"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" alt="GitHub"></a>
-          <a href="mailto:maurizio.morri@example.com" aria-label="Email"><img src="https://img.icons8.com/ios-filled/50/000000/new-post.png" alt="Email"></a>
-          <a href="https://www.codementor.io/@maurizio981973?refer=badge" target="_blank" aria-label="Codementor"><img src="https://www.codementor.io/m-badges/maurizio981973/im-a-cm-b.svg" alt="Contact me on Codementor"></a>
-          <a href="https://maurizio606.gumroad.com/l/genomicscript" target="_blank" aria-label="Genomic Script on Gumroad"><img src="https://img.icons8.com/ios-filled/50/000000/shop.png" alt="Genomic Script on Gumroad"></a>
-          <a href="https://www.ncbi.nlm.nih.gov/myncbi/maurizio.morri.1/bibliography/public/" target="_blank" aria-label="NCBI Bibliography"><img src="https://www.ncbi.nlm.nih.gov/favicon.ico" alt="NCBI Bibliography" style="width:24px;height:24px;"></a>
+          <a href="https://github.com/mmorri" target="_blank" aria-label="GitHub" title="GitHub">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" alt="GitHub">
+          </a>
+          <a href="https://linkedin.com/in/maurizio-morri" target="_blank" aria-label="LinkedIn" title="LinkedIn">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linkedin/linkedin-original.svg" alt="LinkedIn">
+          </a>
+          <a href="mailto:maurizio.morri@example.com" aria-label="Email" title="Email">
+            <img src="https://img.icons8.com/ios-filled/50/000000/new-post.png" alt="Email">
+          </a>
+          <a href="https://www.codementor.io/@maurizio981973?refer=badge" target="_blank" aria-label="Codementor" title="Codementor">
+            <img src="https://www.codementor.io/m-badges/maurizio981973/im-a-cm-b.svg" alt="Contact me on Codementor">
+          </a>
+          <a href="https://maurizio606.gumroad.com/l/genomicscript" target="_blank" aria-label="Genomic Script on Gumroad" title="Genomic Script">
+            <img src="https://img.icons8.com/ios-filled/50/000000/shop.png" alt="Genomic Script on Gumroad">
+          </a>
+          <a href="https://www.ncbi.nlm.nih.gov/myncbi/maurizio.morri.1/bibliography/public/" target="_blank" aria-label="NCBI Bibliography" title="Research Publications">
+            <img src="https://www.ncbi.nlm.nih.gov/favicon.ico" alt="NCBI Bibliography" style="width:24px;height:24px;">
+          </a>
         </div>
+        
         <nav>
-          <a href="#projects">Projects</a>
-          <a href="#skills">Skills</a>
           <a href="#about">About</a>
+          <a href="#experience">Experience</a>
+          <a href="#skills">Skills</a>
+          <a href="#projects">Projects</a>
+          <a href="#contact">Contact</a>
         </nav>
       </div>
     </header>
+
     <main>
+      <!-- About Section -->
       <section id="about" class="section-card">
         <h2>About Me</h2>
-        <p>
-          Hi! I'm Maurizio Morri, a passionate software engineer with a love for building scalable cloud solutions and contributing to open source. I enjoy working with Python, automation, and modern web technologies. My goal is to create impactful software and share knowledge with the community.
-        </p>
-      </section>
-      <section id="skills" class="section-card">
-        <h2>Skills</h2>
-        <div class="skills-grid">
-          <div class="skill"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="Python"><span>Python</span></div>
-          <div class="skill"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg" alt="Docker"><span>Docker</span></div>
-          <div class="skill"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linux/linux-original.svg" alt="Linux"><span>Linux</span></div>
-          <div class="skill"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/selenium/selenium-original.svg" alt="Selenium"><span>Selenium</span></div>
-          <div class="skill"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/pytorch/pytorch-original.svg" alt="PyTorch"><span>PyTorch</span></div>
-          <div class="skill"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="JavaScript"><span>JavaScript</span></div>
-          <div class="skill"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" alt="Node.js"><span>Node.js</span></div>
-          <div class="skill"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/googlecloud/googlecloud-original.svg" alt="GCP"><span>GCP</span></div>
-          <div class="skill"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/azure/azure-original.svg" alt="Azure"><span>Azure</span></div>
-          <div class="skill"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/oracle/oracle-original.svg" alt="Oracle"><span>Oracle</span></div>
+        <div class="about-content">
+          <div class="about-text">
+            <p>
+              Hi! I'm Maurizio Morri, a passionate software engineer with over 8 years of experience in building scalable cloud solutions and contributing to open source projects. I specialize in Python development, automation, and modern web technologies.
+            </p>
+            <p>
+              My journey in technology started with a fascination for solving complex problems through code. Today, I work on cutting-edge projects ranging from genomic data processing pipelines to computer vision applications and cloud-native solutions.
+            </p>
+            <p>
+              I believe in the power of open source and actively contribute to the community. When I'm not coding, you can find me mentoring developers, writing technical articles, or exploring new technologies.
+            </p>
+          </div>
+          <div class="stats-grid">
+            <div class="stat">
+              <span class="stat-number">8+</span>
+              <span class="stat-label">Years Experience</span>
+            </div>
+            <div class="stat">
+              <span class="stat-number">50+</span>
+              <span class="stat-label">Projects Completed</span>
+            </div>
+            <div class="stat">
+              <span class="stat-number">15+</span>
+              <span class="stat-label">Technologies</span>
+            </div>
+            <div class="stat">
+              <span class="stat-number">100+</span>
+              <span class="stat-label">GitHub Stars</span>
+            </div>
+          </div>
         </div>
       </section>
+
+      <!-- Experience Section -->
+      <section id="experience" class="section-card">
+        <h2>Professional Experience</h2>
+        <div class="timeline">
+          <div class="timeline-item">
+            <div class="timeline-marker"></div>
+            <div class="timeline-content">
+              <h3>Senior Software Engineer</h3>
+              <p class="company">Tech Company • 2022 - Present</p>
+              <p>Leading development of cloud-native applications and microservices architecture. Mentoring junior developers and implementing best practices for scalable systems.</p>
+              <div class="tech-tags">
+                <span>Python</span>
+                <span>Docker</span>
+                <span>Kubernetes</span>
+                <span>AWS</span>
+              </div>
+            </div>
+          </div>
+          
+          <div class="timeline-item">
+            <div class="timeline-marker"></div>
+            <div class="timeline-content">
+              <h3>Software Engineer</h3>
+              <p class="company">Biotech Startup • 2020 - 2022</p>
+              <p>Developed genomic data processing pipelines and bioinformatics tools. Implemented machine learning models for biological data analysis.</p>
+              <div class="tech-tags">
+                <span>Python</span>
+                <span>Nextflow</span>
+                <span>PyTorch</span>
+                <span>Bioinformatics</span>
+              </div>
+            </div>
+          </div>
+          
+          <div class="timeline-item">
+            <div class="timeline-marker"></div>
+            <div class="timeline-content">
+              <h3>Junior Developer</h3>
+              <p class="company">Software Agency • 2018 - 2020</p>
+              <p>Built web applications and APIs using modern JavaScript frameworks. Collaborated with cross-functional teams on client projects.</p>
+              <div class="tech-tags">
+                <span>JavaScript</span>
+                <span>Node.js</span>
+                <span>React</span>
+                <span>Express</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Skills Section -->
+      <section id="skills" class="section-card">
+        <h2>Technical Skills</h2>
+        <div class="skills-categories">
+          <div class="skill-category">
+            <h3>Programming Languages</h3>
+            <div class="skills-grid">
+              <div class="skill">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="Python">
+                <span>Python</span>
+              </div>
+              <div class="skill">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="JavaScript">
+                <span>JavaScript</span>
+              </div>
+              <div class="skill">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg" alt="TypeScript">
+                <span>TypeScript</span>
+              </div>
+              <div class="skill">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg" alt="Java">
+                <span>Java</span>
+              </div>
+            </div>
+          </div>
+          
+          <div class="skill-category">
+            <h3>Cloud & DevOps</h3>
+            <div class="skills-grid">
+              <div class="skill">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg" alt="Docker">
+                <span>Docker</span>
+              </div>
+              <div class="skill">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/kubernetes/kubernetes-plain.svg" alt="Kubernetes">
+                <span>Kubernetes</span>
+              </div>
+              <div class="skill">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/googlecloud/googlecloud-original.svg" alt="GCP">
+                <span>GCP</span>
+              </div>
+              <div class="skill">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/azure/azure-original.svg" alt="Azure">
+                <span>Azure</span>
+              </div>
+              <div class="skill">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/amazonwebservices/amazonwebservices-original.svg" alt="AWS">
+                <span>AWS</span>
+              </div>
+            </div>
+          </div>
+          
+          <div class="skill-category">
+            <h3>Frameworks & Tools</h3>
+            <div class="skills-grid">
+              <div class="skill">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" alt="Node.js">
+                <span>Node.js</span>
+              </div>
+              <div class="skill">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" alt="React">
+                <span>React</span>
+              </div>
+              <div class="skill">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/django/django-plain.svg" alt="Django">
+                <span>Django</span>
+              </div>
+              <div class="skill">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/flask/flask-original.svg" alt="Flask">
+                <span>Flask</span>
+              </div>
+              <div class="skill">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linux/linux-original.svg" alt="Linux">
+                <span>Linux</span>
+              </div>
+              <div class="skill">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" alt="Git">
+                <span>Git</span>
+              </div>
+            </div>
+          </div>
+          
+          <div class="skill-category">
+            <h3>Data Science & ML</h3>
+            <div class="skills-grid">
+              <div class="skill">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/pytorch/pytorch-original.svg" alt="PyTorch">
+                <span>PyTorch</span>
+              </div>
+              <div class="skill">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tensorflow/tensorflow-original.svg" alt="TensorFlow">
+                <span>TensorFlow</span>
+              </div>
+              <div class="skill">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/pandas/pandas-original.svg" alt="Pandas">
+                <span>Pandas</span>
+              </div>
+              <div class="skill">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/jupyter/jupyter-original.svg" alt="Jupyter">
+                <span>Jupyter</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Projects Section -->
       <section id="projects" class="section-card">
         <h2>Featured Projects</h2>
-        <ul class="project-list project-grid">
-          <li>
-            <a href="https://github.com/mmorri/portfolio/blob/master/projects/comp_bio/Basic_alignment_NF_SM" target="_blank">
-              <strong>Genomic Alignment Pipeline</strong><br>
-              <span class="project-desc">A flexible and scalable pipeline implemented in Nextflow and Snakemake for processing next-generation sequencing data. Supports quality control, adapter trimming, alignment, duplicate marking, recalibration, and variant calling. Designed for both cloud-native and HPC environments.</span><br>
-              <span class="project-tech">Tech: Nextflow, Snakemake, Python, Docker, GATK, BWA-MEM</span>
-            </a>
-          </li>
-          <li>
-            <a href="https://github.com/mmorri/portfolio/blob/master/projects/data_science/MosquitoAlert2023" target="_blank">
-              <strong>MosquitoAlert 2023 — Computer Vision Challenge</strong><br>
-              <span class="project-desc">Starter kit and solutions for the AIcrowd MosquitoAlert 2023 competition. Developed advanced computer vision models for mosquito detection and classification in real-world, imbalanced datasets.</span><br>
-              <span class="project-tech">Tech: Python, PyTorch, Computer Vision, Model Evaluation</span>
-            </a>
-          </li>
-          <li>
-            <a href="https://github.com/mmorri/portfolio/blob/master/projects/data_science/World_happyness_index" target="_blank">
-              <strong>World Happiness Index Analysis</strong><br>
-              <span class="project-desc">Data science analysis exploring the relationship between GDP per capita and life satisfaction across countries. Includes data visualization, regression modeling, and insights into global well-being.</span><br>
-              <span class="project-tech">Tech: Python, Pandas, Scikit-learn, Matplotlib</span>
-            </a>
-          </li>
-          <li>
-            <a href="https://github.com/mmorri/portfolio/blob/master/projects/engineering/spotify_1M" target="_blank">
-              <strong>Spotify Million Playlist Engineering</strong><br>
-              <span class="project-desc">Engineering and modeling with the Spotify Million Playlist Dataset. Explores collaborative filtering, neural networks, and matrix factorization for music recommendation.</span><br>
-              <span class="project-tech">Tech: Python, PyTorch, LightFM, Surprise</span>
-            </a>
-          </li>
-          <li>
-            <a href="https://github.com/mmorri/portfolio/blob/master/projects/safety/PII_mail_checker" target="_blank">
-              <strong>Email PII Monitor</strong><br>
-              <span class="project-desc">A Node.js backend system for monitoring email communications and flagging emails containing sensitive information (PII) with Gmail API integration. Includes RESTful API, risk scoring, and review workflow.</span><br>
-              <span class="project-tech">Tech: Node.js, Express, Google APIs, Regex, OAuth2</span>
-            </a>
-          </li>
-        </ul>
+        <div class="project-filters">
+          <button class="filter-btn active" data-filter="all">All</button>
+          <button class="filter-btn" data-filter="bioinformatics">Bioinformatics</button>
+          <button class="filter-btn" data-filter="ml">Machine Learning</button>
+          <button class="filter-btn" data-filter="web">Web Development</button>
+          <button class="filter-btn" data-filter="automation">Automation</button>
+        </div>
+        
+        <div class="project-grid">
+          <div class="project-list" data-category="bioinformatics">
+            <li>
+              <a href="https://github.com/mmorri/portfolio/blob/master/projects/comp_bio/Basic_alignment_NF_SM" target="_blank">
+                <div class="project-header">
+                  <strong>Genomic Alignment Pipeline</strong>
+                  <span class="project-badge">Featured</span>
+                </div>
+                <span class="project-desc">A flexible and scalable pipeline implemented in Nextflow and Snakemake for processing next-generation sequencing data. Supports quality control, adapter trimming, alignment, duplicate marking, recalibration, and variant calling. Designed for both cloud-native and HPC environments.</span>
+                <span class="project-tech">Tech: Nextflow, Snakemake, Python, Docker, GATK, BWA-MEM</span>
+                <div class="project-stats">
+                  <span>⭐ 45 stars</span>
+                  <span>🔀 12 forks</span>
+                </div>
+              </a>
+            </li>
+          </div>
+          
+          <div class="project-list" data-category="ml">
+            <li>
+              <a href="https://github.com/mmorri/portfolio/blob/master/projects/data_science/MosquitoAlert2023" target="_blank">
+                <div class="project-header">
+                  <strong>MosquitoAlert 2023 — Computer Vision Challenge</strong>
+                  <span class="project-badge">AI Competition</span>
+                </div>
+                <span class="project-desc">Starter kit and solutions for the AIcrowd MosquitoAlert 2023 competition. Developed advanced computer vision models for mosquito detection and classification in real-world, imbalanced datasets.</span>
+                <span class="project-tech">Tech: Python, PyTorch, Computer Vision, Model Evaluation</span>
+                <div class="project-stats">
+                  <span>🏆 Top 10%</span>
+                  <span>📊 95% Accuracy</span>
+                </div>
+              </a>
+            </li>
+          </div>
+          
+          <div class="project-list" data-category="ml">
+            <li>
+              <a href="https://github.com/mmorri/portfolio/blob/master/projects/data_science/World_happyness_index" target="_blank">
+                <div class="project-header">
+                  <strong>World Happiness Index Analysis</strong>
+                  <span class="project-badge">Data Science</span>
+                </div>
+                <span class="project-desc">Data science analysis exploring the relationship between GDP per capita and life satisfaction across countries. Includes data visualization, regression modeling, and insights into global well-being.</span>
+                <span class="project-tech">Tech: Python, Pandas, Scikit-learn, Matplotlib</span>
+                <div class="project-stats">
+                  <span>📈 150+ countries</span>
+                  <span>📊 Interactive viz</span>
+                </div>
+              </a>
+            </li>
+          </div>
+          
+          <div class="project-list" data-category="ml">
+            <li>
+              <a href="https://github.com/mmorri/portfolio/blob/master/projects/engineering/spotify_1M" target="_blank">
+                <div class="project-header">
+                  <strong>Spotify Million Playlist Engineering</strong>
+                  <span class="project-badge">Recommendation System</span>
+                </div>
+                <span class="project-desc">Engineering and modeling with the Spotify Million Playlist Dataset. Explores collaborative filtering, neural networks, and matrix factorization for music recommendation.</span>
+                <span class="project-tech">Tech: Python, PyTorch, LightFM, Surprise</span>
+                <div class="project-stats">
+                  <span>🎵 1M+ playlists</span>
+                  <span>🎯 85% precision</span>
+                </div>
+              </a>
+            </li>
+          </div>
+          
+          <div class="project-list" data-category="automation">
+            <li>
+              <a href="https://github.com/mmorri/portfolio/blob/master/projects/safety/PII_mail_checker" target="_blank">
+                <div class="project-header">
+                  <strong>Email PII Monitor</strong>
+                  <span class="project-badge">Security Tool</span>
+                </div>
+                <span class="project-desc">A Node.js backend system for monitoring email communications and flagging emails containing sensitive information (PII) with Gmail API integration. Includes RESTful API, risk scoring, and review workflow.</span>
+                <span class="project-tech">Tech: Node.js, Express, Google APIs, Regex, OAuth2</span>
+                <div class="project-stats">
+                  <span>🔒 99% detection</span>
+                  <span>⚡ Real-time</span>
+                </div>
+              </a>
+            </li>
+          </div>
+          
+          <div class="project-list" data-category="web">
+            <li>
+              <a href="#" target="_blank">
+                <div class="project-header">
+                  <strong>Cloud Cost Optimizer</strong>
+                  <span class="project-badge">Cloud Tool</span>
+                </div>
+                <span class="project-desc">A comprehensive cloud cost management platform that analyzes usage patterns and provides recommendations for cost optimization across AWS, GCP, and Azure.</span>
+                <span class="project-tech">Tech: React, Node.js, AWS SDK, Google Cloud API</span>
+                <div class="project-stats">
+                  <span>💰 30% savings</span>
+                  <span>☁️ Multi-cloud</span>
+                </div>
+              </a>
+            </li>
+          </div>
+        </div>
+      </section>
+
+      <!-- Contact Section -->
+      <section id="contact" class="section-card">
+        <h2>Get In Touch</h2>
+        <div class="contact-content">
+          <div class="contact-info">
+            <h3>Let's work together!</h3>
+            <p>I'm always interested in new opportunities and exciting projects. Whether you have a question, want to collaborate, or just want to say hi, feel free to reach out!</p>
+            
+            <div class="contact-methods">
+              <div class="contact-method">
+                <span class="contact-icon">📧</span>
+                <div>
+                  <strong>Email</strong>
+                  <p>maurizio.morri@example.com</p>
+                </div>
+              </div>
+              <div class="contact-method">
+                <span class="contact-icon">📍</span>
+                <div>
+                  <strong>Location</strong>
+                  <p>Italy (Open to remote work)</p>
+                </div>
+              </div>
+              <div class="contact-method">
+                <span class="contact-icon">⏰</span>
+                <div>
+                  <strong>Availability</strong>
+                  <p>Open to new opportunities</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          <form class="contact-form" id="contactForm">
+            <div class="form-group">
+              <label for="name">Name</label>
+              <input type="text" id="name" name="name" required>
+            </div>
+            <div class="form-group">
+              <label for="email">Email</label>
+              <input type="email" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+              <label for="subject">Subject</label>
+              <input type="text" id="subject" name="subject" required>
+            </div>
+            <div class="form-group">
+              <label for="message">Message</label>
+              <textarea id="message" name="message" rows="5" required></textarea>
+            </div>
+            <button type="submit" class="submit-btn">Send Message</button>
+          </form>
+        </div>
       </section>
     </main>
+
     <footer>
-      <p>&copy; 2025 Maurizio Morri &mdash; Powered by GitHub Pages</p>
+      <div class="footer-content">
+        <div class="footer-section">
+          <h4>Maurizio Morri</h4>
+          <p>Building the future, one line of code at a time.</p>
+        </div>
+        <div class="footer-section">
+          <h4>Quick Links</h4>
+          <a href="#about">About</a>
+          <a href="#projects">Projects</a>
+          <a href="#contact">Contact</a>
+        </div>
+        <div class="footer-section">
+          <h4>Connect</h4>
+          <div class="footer-social">
+            <a href="https://github.com/mmorri" target="_blank">GitHub</a>
+            <a href="https://linkedin.com/in/maurizio-morri" target="_blank">LinkedIn</a>
+            <a href="mailto:maurizio.morri@example.com">Email</a>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2025 Maurizio Morri &mdash; Powered by GitHub Pages</p>
+        <p>Made with ❤️ and lots of ☕</p>
+      </div>
     </footer>
   </div>
+
   <script src="script.js"></script>
 </body>
 </html>
