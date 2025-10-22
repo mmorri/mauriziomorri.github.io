@@ -472,6 +472,15 @@ main {
   flex-wrap: wrap;
 }
 
+.project-intro {
+  margin-top: 16px;
+  margin-bottom: 28px;
+  color: var(--text-secondary);
+  font-size: 1rem;
+  text-align: center;
+  line-height: 1.6;
+}
+
 .filter-btn {
   background: transparent;
   border: 1px solid var(--border);
@@ -497,6 +506,22 @@ main {
   grid-template-columns: repeat(auto-fit, minmax(360px, 1fr));
   gap: 28px;
   margin-top: 40px;
+}
+
+.project-status {
+  text-align: center;
+  color: var(--text-muted);
+  font-size: 0.95rem;
+  margin-top: 12px;
+  display: none;
+}
+
+.project-status.active {
+  display: block;
+}
+
+.project-status.error {
+  color: #b91c1c;
 }
 
 .project-list {

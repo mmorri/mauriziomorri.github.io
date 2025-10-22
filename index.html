@@ -276,103 +276,11 @@
 
       <!-- Projects Section -->
       <section id="projects" class="section-card">
-        <h2>Featured Projects</h2>
-        <div class="project-filters">
-          <button class="filter-btn active" data-filter="all">All</button>
-          <button class="filter-btn" data-filter="bioinformatics">Bioinformatics</button>
-          <button class="filter-btn" data-filter="ml">Machine Learning</button>
-          <button class="filter-btn" data-filter="web">Web Development</button>
-          <button class="filter-btn" data-filter="automation">Automation</button>
-        </div>
-        
-        <div class="project-grid">
-          <div class="project-list" data-category="bioinformatics">
-            <li>
-              <a href="https://github.com/mmorri/portfolio/blob/master/projects/comp_bio/Basic_alignment_NF_SM" target="_blank">
-                <div class="project-header">
-                  <strong>Genomic Alignment Pipeline</strong>
-                  <span class="project-badge">Featured</span>
-                </div>
-                <span class="project-desc">A flexible and scalable pipeline implemented in Nextflow and Snakemake for processing next-generation sequencing data. Supports quality control, adapter trimming, alignment, duplicate marking, recalibration, and variant calling. Designed for both cloud-native and HPC environments.</span>
-                <span class="project-tech">Tech: Nextflow, Snakemake, Python, Docker, GATK, BWA-MEM</span>
-                <div class="project-stats">
-                  <span>⭐ 45 stars</span>
-                  <span>🔀 12 forks</span>
-                </div>
-              </a>
-            </li>
-          </div>
-          
-          <div class="project-list" data-category="ml">
-            <li>
-              <a href="https://github.com/mmorri/portfolio/blob/master/projects/data_science/MosquitoAlert2023" target="_blank">
-                <div class="project-header">
-                  <strong>MosquitoAlert 2023 — Computer Vision Challenge</strong>
-                  <span class="project-badge">AI Competition</span>
-                </div>
-                <span class="project-desc">Starter kit and solutions for the AIcrowd MosquitoAlert 2023 competition. Developed advanced computer vision models for mosquito detection and classification in real-world, imbalanced datasets.</span>
-                <span class="project-tech">Tech: Python, PyTorch, Computer Vision, Model Evaluation</span>
-                <div class="project-stats">
-                  <span>🏆 Top 10%</span>
-                  <span>📊 95% Accuracy</span>
-                </div>
-              </a>
-            </li>
-          </div>
-          
-          <div class="project-list" data-category="ml">
-            <li>
-              <a href="https://github.com/mmorri/portfolio/blob/master/projects/data_science/World_happyness_index" target="_blank">
-                <div class="project-header">
-                  <strong>World Happiness Index Analysis</strong>
-                  <span class="project-badge">Data Science</span>
-                </div>
-                <span class="project-desc">Data science analysis exploring the relationship between GDP per capita and life satisfaction across countries. Includes data visualization, regression modeling, and insights into global well-being.</span>
-                <span class="project-tech">Tech: Python, Pandas, Scikit-learn, Matplotlib</span>
-                <div class="project-stats">
-                  <span>📈 150+ countries</span>
-                  <span>📊 Interactive viz</span>
-                </div>
-              </a>
-            </li>
-          </div>
-          
-          <div class="project-list" data-category="ml">
-            <li>
-              <a href="https://github.com/mmorri/portfolio/blob/master/projects/engineering/spotify_1M" target="_blank">
-                <div class="project-header">
-                  <strong>Spotify Million Playlist Engineering</strong>
-                  <span class="project-badge">Recommendation System</span>
-                </div>
-                <span class="project-desc">Engineering and modeling with the Spotify Million Playlist Dataset. Explores collaborative filtering, neural networks, and matrix factorization for music recommendation.</span>
-                <span class="project-tech">Tech: Python, PyTorch, LightFM, Surprise</span>
-                <div class="project-stats">
-                  <span>🎵 1M+ playlists</span>
-                  <span>🎯 85% precision</span>
-                </div>
-              </a>
-            </li>
-          </div>
-          
-          <div class="project-list" data-category="automation">
-            <li>
-              <a href="https://github.com/mmorri/portfolio/blob/master/projects/safety/PII_mail_checker" target="_blank">
-                <div class="project-header">
-                  <strong>Email PII Monitor</strong>
-                  <span class="project-badge">Security Tool</span>
-                </div>
-                <span class="project-desc">A Node.js backend system for monitoring email communications and flagging emails containing sensitive information (PII) with Gmail API integration. Includes RESTful API, risk scoring, and review workflow.</span>
-                <span class="project-tech">Tech: Node.js, Express, Google APIs, Regex, OAuth2</span>
-                <div class="project-stats">
-                  <span>🔒 99% detection</span>
-                  <span>⚡ Real-time</span>
-                </div>
-              </a>
-            </li>
-          </div>
-          
-
-        </div>
+        <h2>Projects</h2>
+        <p class="project-intro">A live view of the repositories I maintain on GitHub, updated automatically from my public profile.</p>
+        <div class="project-filters" id="projectFilters"></div>
+        <p id="projectsStatus" class="project-status" role="status">Loading repositories...</p>
+        <div class="project-grid" id="projectGrid" aria-live="polite"></div>
       </section>
 
       <!-- Education Section -->
