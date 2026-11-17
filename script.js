@@ -313,7 +313,7 @@ function initContactForm() {
     contactForm.reset();
 
     if (statusElement) {
-      statusElement.textContent = 'Thanks for reaching out. I will get back to you shortly.';
+      statusElement.textContent = 'Thanks for reaching out! This form is a demo and does not send messages yet — please email me directly at the address listed above.';
       statusElement.classList.remove('error');
       statusElement.classList.add('success');
     }
